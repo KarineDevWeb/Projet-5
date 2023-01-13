@@ -30,26 +30,8 @@ fetch("http://localhost:3000/api/products")
     newArticle.appendChild(newP);
 }
 })
-.catch(Error => {
-    alert("une erreur s'est produite et ne perment pas d'afficher les produits de notre catalogue, veuillez nous en excuser");
-    console.log("erreur fecth script.js, err");
+// message d'erreur :
+.catch(Err => {
+    alert(`une erreur s'est produite et ne perment pas d'afficher les produits de notre catalogue, veuillez nous en excuser`);
+    console.log("erreur fecth script.js", Err);
 })
-
-// function addProducts(donnees) {
-//     const id = donnees[0]._id
-//     const anchor = makeAnchor(id)
-//     appendChild(anchor)
-// }
-
-// function makeAnchor(id) {
-// const anchor = document.createElement("a")
-// anchor.href = "./product.html?id=" + id
-// return anchor
-// }
-
-// function appendChild(anchor) {
-// const items = document.querySelector("#items")
-//  if (items != null) {
-//         items.appendChild(anchor)
-//     }
-// }
