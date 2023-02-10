@@ -1,4 +1,4 @@
-// en partant du fichier index.html, à la ligne 51, <section class="items" id="items">, je vais pouvoir trouver cet élément avec le code JavaScript
+// en partant du fichier index.html, ligne 51, <section class="items" id="items">
 const items = document.querySelector("#items");
 // je récupére toutes les données grâce à l'API
 fetch("http://localhost:3000/api/products")
@@ -32,6 +32,6 @@ fetch("http://localhost:3000/api/products")
 })
 // message d'erreur :
 .catch(Err => {
-    alert(`une erreur s'est produite et ne perment pas d'afficher les produits de notre catalogue, veuillez nous en excuser`);
+    alert(`une erreur s'est produite et ne permet pas d'afficher les produits, veuillez nous en excuser`);
     console.log("erreur fecth script.js", Err);
 })
